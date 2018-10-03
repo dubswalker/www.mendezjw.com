@@ -6,8 +6,8 @@
   - gem install mdl
 
   install:
-  - pip install --upgrade pip
-  - pip install proselint
+  - pip3 install --upgrade pip
+  - pip3 install proselint
 
   script:
   - proselint README.md
