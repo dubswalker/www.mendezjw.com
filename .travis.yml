@@ -1,7 +1,8 @@
 # run checks on Markdown writing through proselint script:
   # Markdown
   before_install:
-  - sudo add-apt-repository universe && sudo apt install python3-proselint
+  - sudo add-apt-repository universe
+  - sudo apt install python3-proselint
   - gem install mdl
   script:
   - proselint README.md
