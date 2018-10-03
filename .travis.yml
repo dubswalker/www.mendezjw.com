@@ -1,9 +1,14 @@
 # run checks on Markdown writing through proselint script:
   # Markdown
+  language: ruby
+
   before_install:
-  - sudo add-apt-repository universe
-  - sudo apt install python3-proselint
   - gem install mdl
+
+  install:
+  - pip install --upgrade pip
+  - pip install proselint
+
   script:
   - proselint README.md
   - mdl README.md
