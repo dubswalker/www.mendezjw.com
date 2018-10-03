@@ -1,4 +1,5 @@
 # run checks on Markdown writing through proselint script:
   # Markdown
+  language: ruby
   - proselint README.md
   - mdl README.md
